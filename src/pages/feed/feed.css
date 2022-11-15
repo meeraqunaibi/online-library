@@ -1,0 +1,6 @@
+.feed>.mainContent {
+  margin: 50px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}

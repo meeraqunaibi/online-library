@@ -1,0 +1,91 @@
+/* .addPost{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addPost>h2{
+  margin-bottom:3vmin;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xx-large;
+}
+
+.input-group1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 60vmin;
+  height: 30vmin;
+  margin-top:20px ;
+  margin-bottom:25px ;
+}
+.input-group2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 60vmin;
+  height: 30vmin;
+  margin-top:10px ;
+  margin-bottom:30px ;
+}
+.input-group1>textarea{
+  padding: 2vmin;
+  border-radius: 6px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+.input-group1>label{
+  padding: 1vmin;
+  border-radius: 6px;
+  display: flex;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  justify-content: start;
+  align-self: flex-start;
+  background-color:#6eacf4;
+}
+.input-group2>label{
+  padding: 1vmin;
+  border-radius: 6px;
+  display: flex;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  justify-content: start;
+  align-self: flex-start;
+  background-color:#6eacf4;
+}
+
+.input-group2>input{
+  padding: 2vmin;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+
+}
+
+.action-group{
+  padding: 4vmin;
+  display: flex;
+  border-radius: 6px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  justify-content: space-between;
+  align-self: center;
+  flex-direction: column;
+  margin-top: -25vmin;
+  width: 50vmin;
+}
+.action-group > button {
+   margin: 1vmin;
+   padding: 1vmin;
+   cursor: pointer;
+   font-size: large;
+}
+.action-group > button:hover {
+  margin: 1vmin;
+  padding: 0vmin;
+  cursor: pointer;
+  font-size: large;
+}
+.action-group > .submit{
+  background-color:#6eacf4;
+}
+.action-group > .clear{
+  background-color:red;
+} */

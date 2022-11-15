@@ -1,0 +1,63 @@
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login>h2{
+  margin-bottom:10vmin;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xxx-large;
+
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 60vmin;
+  height: 40vmin;
+  margin-top:2vmin ;
+  margin-bottom:-180px ;
+}
+
+.input-group>input{
+  padding: 2vmin;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+
+}
+.input-group>label{
+  padding: 1vmin;
+  border-radius: 6px;
+  display: flex;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  justify-content: start;
+  align-self: flex-start;
+  background-color:#6eacf4;
+}
+.action-group{
+  padding: 4vmin;
+  display: flex;
+  border-radius: 6px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  justify-content: space-between;
+  align-self: center;
+  flex-direction: column;
+  margin-top: -25vmin;
+  width: 50vmin;
+}
+.action-group > button {
+   margin: 1vmin;
+   padding: 1vmin;
+   cursor: pointer;
+   font-size: large;
+}
+.action-group > button:hover {
+  margin: 1vmin;
+  padding: 0.9vmin;
+  cursor: pointer;
+  font-size: large;
+}
+
+.action-group > .Login{
+  background-color:#6eacf4;
+}

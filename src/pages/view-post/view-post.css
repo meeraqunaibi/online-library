@@ -1,0 +1,28 @@
+.view-post {
+  min-height: 400px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.view-post>.body {
+  flex-grow: 2;
+  margin-bottom: 20px;
+}
+
+.view-post>.body>p {
+  text-align: left;
+  color: #444;
+}
+
+.view-post>img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
