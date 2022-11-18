@@ -1,0 +1,8 @@
+.post-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-actions button:last-of-type {
+  margin-left: auto;
+}

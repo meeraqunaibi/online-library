@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Vivian Social Network
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Mockups
 
-In the project directory, you can run:
+Use [this link](https://www.figma.com/community/file/1164103907030501213) to get the mockups of the app 
 
 ### `npm start`
 
