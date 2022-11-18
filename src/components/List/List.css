@@ -13,7 +13,6 @@
 
 .ListItem>.icon{ 
     display: flex;
-    color: azure;
     margin-bottom: 20px;
     margin-top: 10px;
     border-radius: 5vmin ;
@@ -26,6 +25,7 @@
 
 .ListItem>div>span{ 
   margin-left: 6px;
+  color:#fdfdfd;
 
 }
 
@@ -48,4 +48,8 @@
     height: 40px;
     cursor: pointer;
 
+}
+.icon:hover{
+background-color: #4A80f0;
+  color: rgb(247, 255, 240);
 }
