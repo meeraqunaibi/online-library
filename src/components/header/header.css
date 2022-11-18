@@ -1,19 +1,44 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  height: 65px;
-  align-items: center;
-  padding: 0 40px;
-  box-shadow: 0px 2px 7px 0px #ddd;
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:30vmin;
+    height: 100%;
+    box-shadow: 0px -5px 10px 3px #0000001a;
+    background-color: rgb(14, 12, 34);
 }
 
-.header .actions {
-  display: flex;
-  align-items: center;
+.header>.icon{ 
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5vmin ;
+    width: 20vmin;
+    height: 6vmin;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 10px;
+    cursor: pointer;
 }
-.number{
-  width: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
 
+.icon>span{ 
+    margin-left: 6px;
+    color:#858589;
+
+}
+
+.hrList{
+    width: 20vmin;
+    background-color: #858589;
+}
+
+.icon:hover span{
+    color: rgb(247, 255, 240);
+}
+
+
+.icon:hover{
+    background-color: #4A80f0;
 }

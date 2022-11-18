@@ -1,25 +1,39 @@
-import React from 'react';
-import './header.css';
-// import { Bell, Chats,PlusCircle ,SignIn} from 'phosphor-react';
-// import { Link } from 'react-router-dom';
-
+import React from "react";
+import { HouseSimple, List, Heart, Book } from "phosphor-react";
+import "./header.css";
+import UserInfo from "../userInfo/userInfo.component";
 const Header = () => {
- 
-   
   return (
     <div className="header">
-      {/* <Link to="/feed"><img src={logo} alt="logo" height="50px" /></Link> */}
-      <div className="actions">
-        
-
-        {/* <Link className="icon-button"><Bell size={24} weight="bold" /></Link>
-        <Link to="/chat" className="icon-button"><Chats size={24} weight="bold" /></Link>
-        <Link to="/addPost" className="icon-button"><PlusCircle size={24} weight="bold" /></Link>
-        <Link to="/login" className="icon-button"><SignIn size={24} weight="bold" /></Link> */}
-
+      <UserInfo />
+      <hr className="hrList" />
+      <div className="icon">
+        <span>
+          <HouseSimple size={24} weight="bold"/>
+        </span>
+        <span>Home</span>
       </div>
+      <div className="icon">
+        <span>
+          <List size={24} weight="bold"/>
+        </span>
+        <span>MyList</span>
+      </div>
+      <div className="icon">
+        <span>
+          <Heart size={24} weight="bold"/>
+        </span>
+        <span>Favorites</span>
+      </div>
+      <div className="icon">
+        <span>
+          <Book size={24} weight="bold"/>
+        </span>
+        <span>Reading</span>
+      </div>
+      <hr className="hrList" />
     </div>
-  )
-}
+  );
+};
 
 export default Header;

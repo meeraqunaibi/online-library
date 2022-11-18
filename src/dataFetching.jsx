@@ -6,7 +6,7 @@ const DataFetching = (props) => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://www.googleapis.com/books/v1/volumes?q=%22%22&printType=books&maxResults=30&key=AIzaSyAHmyqK6zsP9PJEjjas6jLRiZNTvvC5lWk"
+        "https://www.googleapis.com/books/v1/volumes?q=%22%22%&maxResults=30&key=AIzaSyAHmyqK6zsP9PJEjjas6jLRiZNTvvC5lWk"
       );
       setLibrary(response.data.items);
       console.log(response.data.items[2]);

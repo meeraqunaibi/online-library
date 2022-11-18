@@ -1,11 +1,9 @@
 import React from 'react';
-import './author.css';
+import './userInfo.css';
 import userImg from '../../assets/images/user.png';
-// import {Link} from 'react-router-dom'
-const Author = (props) => {
-
+const UserInfo = (props) => {
   return (
-    <div className="author">
+    <div className="userInfo">
       <img src={userImg} width={50} height={50} alt="Placeholder User Image" />
       <div className="info">
         <h2>Mak DeMarco</h2>
@@ -16,4 +14,4 @@ const Author = (props) => {
   )
 }
 
-export default Author
+export default UserInfo
