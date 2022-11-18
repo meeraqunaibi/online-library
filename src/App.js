@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import BookList from './components/bookList/bookList.component';
+import DataFetching from './dataFetching';
 
 function App() {
+  const [library, setLibrary] = useState([]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <DataFetching setLibrary={setLibrary} />
+    <BookList library={library}/>
     </div>
   );
 }
