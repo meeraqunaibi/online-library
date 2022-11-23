@@ -1,0 +1,97 @@
+.AboutBook{
+    width:50vmin;
+    height: 100vmin;
+    box-shadow: 0px -5px 10px 3px #0000001a;
+    background-color: #0e0c22;
+    border-radius:0px 20px 20px 0px;  
+    color: aliceblue;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.AboutBook>.Book>.header{
+    font-size: 20px;
+    font-weight:2px;
+    text-shadow: 3px;
+    margin-bottom: 20px;
+}
+.AboutBook>.Read{
+    width:40vmin;
+    padding: 10px;
+    box-shadow: 0px -5px 10px 3px #0000001a;
+    border-radius:20px;  
+    color: aliceblue;  
+    background-color: #4A80f0;
+    cursor: pointer;
+   color: #fdfdfd;
+   font-size: 20px;
+   font-weight:2px;
+   text-shadow: 3px;
+   margin-bottom: 10px;
+}
+
+
+  .AboutBook>.Book{
+    height: 50% ;
+    padding: 20px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  .AboutBook>.Book>.bookTitle {
+    font-size: 80%;
+    font-weight: 15px;
+    text-shadow: 20px;
+    display: flex;
+    justify-content: center;
+
+
+  }
+  .AboutBook>.Book>.authorTitle {
+    font-size: 13px;
+    font-weight:120;
+    text-shadow: 3px;
+    display: flex;
+    margin-top: -10px;
+    justify-content: center;
+  } 
+  .AboutBook>.bookInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -20px;
+    background-color: #1e1e25;
+    padding: 20px;
+    border-radius:20px ;
+    width: 30vmin;
+    
+  }
+  .AboutBook>.bookInfo>.smallInfo{
+    display: flex;
+    flex-direction: column;
+  }
+  .AboutBook>.bookInfo>.smallInfo>.info {
+    font-size: 5px;
+    font-weight:120;
+    text-shadow: 3px;
+    
+  } 
+  .AboutBook>.Plot>.divPlot{
+    font-size: 20px;
+    font-weight:2px;
+    text-shadow: 3px;
+    margin-left: 20px;
+    display: flex;
+    text-align: start;
+    margin-top: -10px;    
+}
+
+.AboutBook>.Plot>p{
+    font-size: 15px;
+    font-weight:2px;
+    text-shadow: 3px;
+    margin-left: 20px;
+    display: flex;
+    text-align: start;
+    margin-top: 5px;    
+}
