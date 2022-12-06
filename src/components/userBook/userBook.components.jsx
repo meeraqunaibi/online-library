@@ -1,9 +1,8 @@
 import { CaretRight } from 'phosphor-react';
 import React from 'react'
-import BookImage from '../../assets/images/BookImage.png';
 import TitleImage from '../../assets/images/titleImg.jpg';
-import './PostBook.css'
-const PostBook = () => {
+import './userBook.css'
+const UserBook = () => {
   return (
     <div className="BookPost">
 
@@ -40,4 +39,4 @@ const PostBook = () => {
   )
 }
 
-export default PostBook
+export default UserBook;

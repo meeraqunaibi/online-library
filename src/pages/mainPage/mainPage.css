@@ -1,9 +1,4 @@
-.sec1{
-    width: 13%;
-}
-.sec2{
-    width: 70%;
-}
 .content{
     display: flex;
+    width: 100%;
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import { HouseSimple, List, Heart, Book } from "phosphor-react";
-import "./header.css";
+import "./sideBar.css";
 import UserInfo from "../userInfo/userInfo.component";
-const Header = () => {
+const SideBar = () => {
   return (
     <div className="header">
       <UserInfo />
@@ -36,4 +36,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default SideBar;
