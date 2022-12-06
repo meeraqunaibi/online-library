@@ -12,8 +12,8 @@ function App() {
       <DataFetching setLibrary={setLibrary} />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage library={library}/>} />
-                  </Routes>
+          <Route path="/" element={<MainPage library={library} />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
