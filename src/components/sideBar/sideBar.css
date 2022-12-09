@@ -12,11 +12,10 @@
 
 .header>.icon{ 
     display: flex;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin: 5px 0px;
     border-radius: 5vmin ;
-    width: 20vmin;
-    height: 6vmin;
+    width: 21vmin;
+    height: 5vmin;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -33,6 +32,7 @@
 .hrList{
     width: 20vmin;
     background-color: #858589;
+    margin: 23px 0px;
 }
 
 .icon:hover span{

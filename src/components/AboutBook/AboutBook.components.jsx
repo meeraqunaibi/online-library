@@ -16,15 +16,19 @@ const AboutBook = (props) => {
             className="titleImg"
           />
         ) : (
-          <img className="titleImg" src={defaultImage} alt="book image"/>
+          <img className="titleImg" src={defaultImage} alt="book image" />
         )}
         <span className="bookTitle">{currentBook.volumeInfo.title}</span>
         <span className="authorTitle">{currentBook.volumeInfo.authors}</span>
       </div>
       <div className="bookInfo">
         <div className="smallInfo">
-          <span>{currentBook.volumeInfo.pageCount}</span>
-          <span>pages</span>
+          {currentBook.volumeInfo.pageCount ? (
+            <span>{currentBook.volumeInfo.pageCount}</span>
+          ) : (
+            <span>unknown</span>
+          )}
+          <span className="authorTitle">pages</span>
         </div>
         |
         <div className="smallInfo">
@@ -33,7 +37,7 @@ const AboutBook = (props) => {
           ) : (
             0
           )}
-          <span>reviews</span>
+          <span className="authorTitle">reviews</span>
         </div>
         |
         <div className="smallInfo">
@@ -42,14 +46,17 @@ const AboutBook = (props) => {
           ) : (
             0
           )}
-          <span>rating</span>
+          <span className="authorTitle">rating</span>
         </div>
       </div>
-      {currentBook.volumeInfo.description?
-      (<div className="plot">
-        <div className="divPlot">Plot</div>
-        <p>{currentBook.volumeInfo.description}</p>
-      </div>):""}
+      {currentBook.volumeInfo.description ? (
+        <div className="plot">
+          <div className="divPlot">Plot</div>
+          <p>{currentBook.volumeInfo.description}</p>
+        </div>
+      ) : (
+        ""
+      )}
       <button className="Read">Read</button>
     </div>
   );
