@@ -10,9 +10,23 @@ import {
 } from "phosphor-react";
 import "./sideBar.css";
 import UserInfo from "../userInfo/userInfo.component";
+import { UserContext } from "../provider/userProvider.component";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 const SideBar = () => {
+  const navigate = useNavigate();
+  const { handleLogout, user } = useContext(UserContext);
+  
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    } else if (user) {
+      navigate("/library");
+    }
+  }, [user]);
   return (
-    <div className="header">
+    <div className="sidebar">
       <UserInfo />
       <hr className="hrList" />
       <div className="icon">
@@ -56,7 +70,7 @@ const SideBar = () => {
         <span>
           <SignOut size={24} />
         </span>
-        <span>Logout</span>
+        <span onClick={handleLogout}>Logout</span>
       </div>
     </div>
   );

@@ -91,11 +91,12 @@
   padding: 0px 10px;
   margin-top: 10px;  
 }
-.plot>p{
+.book-description{
     font-size: 15px;
     font-weight:2px;
     text-shadow: 3px;
     text-align: start;
     line-height: 2em;  
+    color: white;
   
 }

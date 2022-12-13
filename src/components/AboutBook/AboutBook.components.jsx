@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AboutBook.css";
 // import BookImage from "../../assets/images/BookImage.png";
 import defaultImage from "../../assets/images/default.jpg";
+import { Typography } from "antd";
 
 const AboutBook = (props) => {
+  const { Paragraph } = Typography;
   let { currentBook } = props;
+  const [more, setMore] = useState(false);
   return (
     <div className="AboutBook">
       <div className="Book">
@@ -52,12 +55,26 @@ const AboutBook = (props) => {
       {currentBook.volumeInfo.description ? (
         <div className="plot">
           <div className="divPlot">Plot</div>
-          <p>{currentBook.volumeInfo.description}</p>
+          <Paragraph
+            className="book-description"
+            ellipsis={
+              !more ? { rows: 2, expandable: true, symbol: "more" } : true
+            }
+          >
+            {currentBook.volumeInfo.description}
+          </Paragraph>
         </div>
       ) : (
         ""
       )}
-      <button className="Read">Read</button>
+      <button
+        className="Read"
+        onClick={() => {
+          setMore(true);
+        }}
+      >
+        Read
+      </button>
     </div>
   );
 };

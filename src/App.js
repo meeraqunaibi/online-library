@@ -1,20 +1,34 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import "./App.css";
 import MainPage from "./pages/mainPage/MainPage";
-import { useState } from "react";
-import DataFetching from "./dataFetching";
-
+import LoginPage from "./pages/loginPage/loginPage";
+import UserProvider, {
+  UserContext,
+} from "./components/provider/userProvider.component";
+import { useContext, useEffect } from "react";
 function App() {
-  const [library, setLibrary] = useState([]);
-
+  const { user } = useContext(UserContext);
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  }, [user]);
   return (
     <div className="App">
-      <DataFetching setLibrary={setLibrary} />
-      <BrowserRouter>
+      <UserProvider>
         <Routes>
-          <Route path="/" element={<MainPage library={library} />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="/" element={<Navigate to="/library" />} />
+          <Route path="library" element={<MainPage />} />
         </Routes>
-      </BrowserRouter>
+      </UserProvider>
     </div>
   );
 }

@@ -1,38 +1,56 @@
-import React from 'react';
-import './header.css';
+import React, { useState } from "react";
+import "./header.css";
+import { MagnifyingGlass } from "phosphor-react";
 // import { Link } from 'react-router-dom';
 
-const Header = () => {
-
-
+const Header = (props) => {
+  const [searchInput, setSearchInput] = useState("");
   return (
     <div className="header">
-    <div>
-      <div className="pages_div">
-
-        <span className="page">
+      <div className="types">
+        <span
+          className="type"
+          onClick={() => {
+            props.setType("all");
+          }}
+        >
+          All
+        </span>
+        <span
+          className="type"
+          onClick={() => {
+            props.setType("books");
+          }}
+        >
           Books
         </span>
-       
-        <span className="page">
-          Audiobooks
-        </span>
-       
-        <span className="page">
-          Podcast
+        <span className="type" onClick={() => props.setType("magazines")}>
+          Magazines
         </span>
       </div>
-      <hr />
+      <div className="search-input">
+        <input
+          type="search"
+          name="search"
+          value={searchInput}
+          placeholder="Book name"
+          onChange={(e) => {
+            setSearchInput(e.currentTarget.value);
+          }}
+        />
+        <MagnifyingGlass
+          onClick={() => {
+            props.setTitle(searchInput);
+            setSearchInput("");
+            console.log(searchInput);
+          }}
+          className="search-icon"
+          size={24}
+          weight={"bold"}
+        />
       </div>
-      <input
-        type="search"
-        name="search"
-        placeholder='Genere, author, or book name  '
-
-      />
     </div>
-
-  )
-}
+  );
+};
 
 export default Header;
