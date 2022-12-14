@@ -1,56 +1,53 @@
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  justify-content: center;
-  min-height: 100vh;
-  background: #0c0116;
-  display: flex;
-  align-items: center;
+body{
+  background-color: rgb(249, 249, 249);
 }
 .login{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   width: 100%;
-  height: 100%;
+  height: 100vmin;
   background-attachment: fixed;
-  background-size: 100%;
   background-position: center;
  
 }
-.login>h2{
-  margin-bottom:10vmin;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: xxx-large;
-  color:#4A80f0;
-  ;
-
+.login>img{
+  display: flex;
+  align-self: center;
+  margin-right: 80px;
+  width: 100vmin;
+  background-position: center;
+ 
 }
+
+
+.form-inner>h4{
+  color: rgb(140, 148, 148);
+  text-align: start;
+  margin-left: 20px;
+}
+
 .form {
   position: relative;
-  background: #0c0116;
+  display: flex;
+  align-items: center;
   overflow: hidden;
-  box-shadow: 0px 0px 10px 0px rgb(116, 119, 114);
   border-radius: 5px;
-  padding: 60px 15px;
-  width: 470px;
-  height: 350px;
+  width: 570px;
+  height: 80%;
+  margin-top: 100px;
 }
 
 .form-inner {
+
   position: absolute;
   top: 50%;
   left: 50%;
-  background: #0c0116;
-  height: 98%;
-  width: 98%;
+  height: 100%;
+  width: 60%;
   transform: translate(-50%, -50%);
+  
 }
 
 .content {
@@ -58,8 +55,10 @@ body {
   padding: 25px;
   height: 100%;
 }
-.form-inner h2 {
-  text-align: center;
+.form-inner >h2 {
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 10px;
   padding-top: 35px;
   font-size: 30px;
   color: #6e8ee8;
@@ -69,10 +68,10 @@ body {
   padding: 12px 15px;
   border: 1.5px solid rgb(99, 94, 255);
   outline: none;
-  background: #19052c;
-  color: white;
+  background: #e6e6e6;
+  color: rgb(8, 1, 1);
   width: 100%;
-  left: 50%;
+  left: 40%;
   border-radius: 10px;
   margin-top: 20px;
 }
@@ -98,195 +97,3 @@ body {
   width: 50%;
   position: absolute;
 }
-
-.form span:nth-child(1) {
-  background: #ffda05;
-  animation: 5s span1 infinite linear;
-  animation-delay: 1s;
-  top: 0;
-  left: -48%;
-}
-.form span:nth-child(2) {
-  background:#4A80f0;
-  bottom: 0;
-  right: -48%;
-  animation: 5s span2 infinite linear;
-}
-.form span:nth-child(3) {
-  background: #800080;
-  top: 0px;
-  animation: 5s span3 infinite linear;
-  right: -48%;
-}
-.form span:nth-child(4) {
-  animation: 5s span4 infinite linear;
-  animation-delay: 1s;
-  background: #ff0000;
-  bottom: 0;
-  right: -48%;
-}
-
-@keyframes span1 {
-0% {
-top: -48%;
-left: -48%;
-}
-25% {
-top: -48%;
-left: 98%;
-}
-50% {
-top: 98%;
-left: 98%;
-}
-75% {
- top: 98%;
- left: -48%;
-}
-100% {
- top: -48%;
- left: -48%;
-}
-}
-@keyframes span2 {
-0% {
- bottom: -48%;
- right: -48%;
-}
-25% {
- bottom: -48%;
- right: 98%;
-}
-50% {
- bottom: 98%;
- right: 98%;
-}
-75% {
- bottom: 98%;
- right: -48%;
-}
-100% {
- bottom: -48%;
- right: -48%;
-}
-}
-@keyframes span3 {
-0% {
- top: -48%;
- left: -48%;
-}
-25% {
- top: -48%;
- left: 98%;
-}
-50% {
- top: 98%;
- left: 98%;
-}
-75% {
- top: 98%;
- left: -48%;
-}
-100% {
- top: -48%;
- left: -48%;
-}
-}
-
-@keyframes span4 {
-0% {
- bottom: -48%;
- right: -48%;
-}
-25% {
- bottom: -48%;
- right: 98%;
-}
-50% {
- bottom: 98%;
- right: 98%;
-}
-75% {
- bottom: 98%;
- right: -48%;
-}
-100% {
- bottom: -48%;
- right: -48%;
-}
-}
-/*
-.login{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-image: url(https://media.istockphoto.com/id/1155270678/vector/abstract-image-book-in-the-form-of-a-starry-sky-or-space-consisting-of-points-lines-and.jpg?s=612x612&w=0&k=20&c=eTBFsVAGG_b8BcJFlTI9KXk24yL1fGxBdb4BkrXx_hs=);
-  background-attachment: fixed;
-  background-size: 100%;
-  background-position: center;
-
-
-  
-}
- .login>h2{
-  margin-bottom:10vmin;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: xxx-large;
-  color: aliceblue;
-
-}
-.input-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 60vmin;
-  height: 40vmin;
-  margin-top:2vmin ;
-  margin-bottom:-180px ;
-}
-
-.input-group>input{
-  padding: 2vmin;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: large;
-  box-shadow: 0 0 4px 0 #00000047;
-
-}
-.input-group>label{
-  padding: 1vmin;
-  border-radius: 6px;
-  display: flex;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  justify-content: start;
-  align-self: flex-start;
-  background-color: #4A80f0;
-}
-.action-group{
-  padding: 4vmin;
-  display: flex;
-  border-radius: 6px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  justify-content: space-between;
-  align-self: center;
-  flex-direction: column;
-  margin-top: -25vmin;
-  width: 50vmin;
-}
-.action-group > button {
-   margin: 1vmin;
-   padding: 1vmin;
-   cursor: pointer;
-   font-size: large;
-}
-.action-group > button:hover {
-  margin: 1vmin;
-  padding: 0.9vmin;
-  cursor: pointer;
-  font-size: large;
-}
-
-.action-group > .Login{
-  background-color: #4A80f0;
-} */
