@@ -17,7 +17,7 @@ import { useEffect } from "react";
 const SideBar = () => {
   const navigate = useNavigate();
   const { handleLogout, user } = useContext(UserContext);
-  
+
   useEffect(() => {
     if (!user) {
       navigate("/login");
