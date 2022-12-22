@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   HouseSimple,
   List,
@@ -17,25 +17,32 @@ import { useEffect } from "react";
 const SideBar = () => {
   const navigate = useNavigate();
   const { handleLogout, user } = useContext(UserContext);
-
   useEffect(() => {
     if (!user) {
       navigate("/login");
-    } else if (user) {
-      navigate("/library");
     }
   }, [user]);
   return (
     <div className="sidebar">
       <UserInfo />
       <hr className="hrList" />
-      <div className="icon">
+      <div
+        className="icon"
+        onClick={() => {
+          navigate("/library");
+        }}
+      >
         <span>
           <HouseSimple size={24} weight="bold" />
         </span>
         <span>Home</span>
       </div>
-      <div className="icon">
+      <div
+        className="icon"
+        onClick={() => {
+          navigate("/library/myList");
+        }}
+      >
         <span>
           <List size={24} weight="bold" />
         </span>

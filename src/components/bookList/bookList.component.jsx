@@ -3,7 +3,7 @@ import "./bookList.css";
 import BookCard from "../bookCard/bookCard.component";
 
 const BookList = (props) => {
-  let { library, setBookDetails, getBook } = props;
+  let { library, setBookDetails, getBook} = props;
   return (
     <div className="books">
       <h1>Books Library</h1>

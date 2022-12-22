@@ -7,7 +7,6 @@ import { Typography } from "antd";
 const AboutBook = (props) => {
   const { Paragraph } = Typography;
   let { currentBook } = props;
-  const [more, setMore] = useState(false);
   return (
     <div className="AboutBook">
       <div className="Book">
@@ -57,9 +56,7 @@ const AboutBook = (props) => {
           <div className="divPlot">Plot</div>
           <Paragraph
             className="book-description"
-            ellipsis={
-              !more ? { rows: 2, expandable: true, symbol: "more" } : true
-            }
+            ellipsis={{ rows: 2, expandable: true, symbol: "more" }}
           >
             {currentBook.volumeInfo.description}
           </Paragraph>
@@ -67,14 +64,9 @@ const AboutBook = (props) => {
       ) : (
         ""
       )}
-      <button
-        className="Read"
-        onClick={() => {
-          setMore(true);
-        }}
-      >
-        Read
-      </button>
+      <a href="https://www.google.com/">
+        <button className="buy-book">Buy</button>
+      </a>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import './userInfo.css';
 import userImg from '../../assets/images/user.png';
 import { useContext } from 'react';
 import { UserContext } from '../provider/userProvider.component';
-const UserInfo = (props) => {
+const UserInfo = () => {
   let {user} = useContext(UserContext);
   return (
     <div className="userInfo">
