@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import "./AboutBook.css";
-// import BookImage from "../../assets/images/BookImage.png";
+import React from "react";
+import "./aboutBook.css";
 import defaultImage from "../../assets/images/default.jpg";
 import { Typography } from "antd";
 
@@ -14,11 +13,11 @@ const AboutBook = (props) => {
         {currentBook?.volumeInfo?.imageLinks?.thumbnail ? (
           <img
             src={currentBook?.volumeInfo?.imageLinks?.thumbnail}
-            alt="book image"
+            alt="book"
             className="titleImg"
           />
         ) : (
-          <img className="titleImg" src={defaultImage} alt="book image" />
+          <img className="titleImg" src={defaultImage} alt="book" />
         )}
         <span className="bookTitle">{currentBook.volumeInfo.title}</span>
         <span className="authorTitle">{currentBook.volumeInfo.authors}</span>
