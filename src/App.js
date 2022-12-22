@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
+import "./App.css";
+import MainPage from "./pages/mainPage/mainPage";
+import LoginPage from "./pages/loginPage/loginPage";
+import UserProvider, {
+  UserContext,
+} from "./components/provider/userProvider.component";
+import { useContext, useEffect } from "react";
+import MyBooks from "./pages/myBooksPage/myBooksPage.component";
+import MyLibraryProvider from "./components/provider/myLibraryProvider.component";
 function App() {
+  const { user } = useContext(UserContext);
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  }, [user]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserProvider>
+        <MyLibraryProvider>
+          <Routes>
+            <Route path="login" element={<LoginPage />} />
+            <Route path="/" element={<Navigate to="/library" />} />
+            <Route path="library" element={<MainPage />} />
+            <Route path="library/myList" element={<MyBooks />} />
+          </Routes>
+        </MyLibraryProvider>
+      </UserProvider>
     </div>
   );
 }

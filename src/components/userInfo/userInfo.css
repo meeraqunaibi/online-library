@@ -1,0 +1,34 @@
+ .userInfo {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  column-gap: 15px;
+  width: 20vmin;
+  height: 10vmin;
+  margin-top: 100px;
+  padding-bottom:50px ;
+  color: aliceblue;
+}
+.userInfo> img{
+  width: 60px;
+  height: 60px;
+}
+.userInfo>.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userInfo>.info>h2 {
+  margin: 1px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.userInfo>.info>span {
+  font-size: 13px;
+  font-weight:120;
+  color: #858589;
+} 
