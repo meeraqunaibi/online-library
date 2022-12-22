@@ -1,12 +1,13 @@
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
-import MainPage from "./pages/mainPage/mainPage";
-import LoginPage from "./pages/loginPage/loginPage";
+import React from 'react'
+import MainPage from "./Pages/mainPage/mainPage";
+import MyBooks from "./Pages/myBooksPage/myBooksPage";
+import LoginPage from "./Pages/loginPage/loginPage";
 import UserProvider, {
   UserContext,
 } from "./components/provider/userProvider.component";
 import { useContext, useEffect } from "react";
-import MyBooks from "./pages/myBooksPage/myBooksPage.component";
 import MyLibraryProvider from "./components/provider/myLibraryProvider.component";
 function App() {
   const { user } = useContext(UserContext);

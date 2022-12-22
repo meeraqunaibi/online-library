@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../components/provider/userProvider.component";
-import "./login.css";
+import "./loginPage.css";
 import libr from "../../assets/images/libr.jpg";
 const LoginPage = () => {
   const { handleUserLogin, user } = useContext(UserContext);

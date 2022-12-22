@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import "./bookCard.css";
 import defaultImage from "../../assets/images/default.jpg";
 import { BookOpen } from "phosphor-react";
@@ -23,9 +23,9 @@ const BookCard = (props) => {
       }}
     >
       {book?.volumeInfo?.imageLinks?.thumbnail ? (
-        <img src={book?.volumeInfo?.imageLinks?.thumbnail} alt="book image" />
+        <img src={book?.volumeInfo?.imageLinks?.thumbnail} alt="book" />
       ) : (
-        <img src={defaultImage} alt="book image" />
+        <img src={defaultImage} alt="book" />
       )}
       <span>{book.volumeInfo.title}</span>
       <span>{book.volumeInfo.authors}</span>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import AboutBook from "../../components/AboutBook/AboutBook.components";
+import AboutBook from "../../components/aboutBook/aboutBook.components";
 import BookList from "../../components/bookList/bookList.component";
 import Header from "../../components/header/header.component";
 import SideBar from "../../components/sideBar/sideBar.component";
